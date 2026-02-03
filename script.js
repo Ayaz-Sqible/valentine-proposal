@@ -9,6 +9,7 @@ const catImg = document.getElementById("letter-cat");
 const buttons = document.getElementById("letter-buttons");
 const finalText = document.getElementById("final-text");
 const appleWallet = document.querySelector(".apple_wallet");
+const music = document.getElementById("bg-music");
 
 // Click Envelope
 
@@ -72,4 +73,7 @@ yesBtn.addEventListener("click", () => {
     finalText.style.display = "block";
 
     appleWallet.style.display = "block";
+
+    music.volume = 0.4; // soft background
+    music.play();
 });
